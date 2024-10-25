@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="app3.css">
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission for now
+            document.getElementById('thank-you-message').style.display = 'block'; // Show thank you message
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+    <nav>
+        <nav>
+            <ul>
+                <li><a href="class234567890.html" target="_blank">Home</a></li> <!-- External link -->
+                <li><a href="aboutwebsite.html">About</a></li> <!-- Internal link to a new About page -->
+                <li><a href="serviceswebsite.html">Services</a></li>
+                <li><a href="Contactwebsite.html">Contact</a></li><br>
+            </ul>
+        </nav>
+        </header><br
+    <section id="contact" >
+        <h2 style="color: blue;" align="center">Contact Us</h2>
+        <p style="color: blue; size: 30px;" align="center">We would love to hear from you! Please reach out using the form below, or contact us via phone or email.</p>
+    
+        <div class="contact-details" align="center">
+            <p><strong>Email:</strong> info@yourcompany.com</p>
+            <p><strong>Phone:</strong> +234 09165474407</p>
+            <p><strong>Address:</strong> 43 Ojo Street, Ekpoma, Nigeria</p>
+        </div>
+    
+        <h3 align="center">Get in Touch</h3>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your Email" required><br><br>
+            
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" placeholder="Your message here" required></textarea><br><br>
+            
+            <input type="submit" value="Submit">
+        </form>
+
+        <a href="https://facebook.com" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-2c0-.897.281-1 1-1h3v-5h-4c-4.322 0-6 2.015-6 5.312v2.688z"/>
+            </svg> Facebook
+        </a>
+        <a href="https://wa.me/+2349165474407" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.029-.967-.273-.1-.473-.149-.672.149-.198.297-.767.967-.94 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.52.149-.174.198-.297.298-.495.099-.198.05-.372-.025-.521-.075-.149-.672-1.611-.922-2.209-.242-.579-.487-.501-.672-.51l-.573-.01c-.198 0-.52.074-.792.372-.272.297-1.041 1.016-1.041 2.475s1.065 2.869 1.213 3.074c.149.198 2.095 3.197 5.07 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.413-.074-.124-.272-.198-.57-.347zm-5.472-12.382c-5.523 0-10 4.477-10 10 0 1.799.473 3.478 1.375 4.979l-1.45 5.303 5.491-1.437c1.459.797 3.104 1.155 4.584 1.155 5.523 0 10-4.477 10-10 0-5.523-4.477-10-10-10zm0 18.333c-1.34 0-2.676-.353-3.835-1.029l-.275-.162-3.65.955.975-3.56-.179-.288c-.839-1.351-1.281-2.905-1.281-4.49 0-4.411 3.589-8 8-8 4.411 0 8 3.589 8 8 0 4.411-3.589 8-8 8z"/>
+            </svg> WhatsApp
+        </a>
+        <a href="tel:+15551234567">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M22 16.92v3.48a2.6 2.6 0 0 1-2.85 2.6A19.48 19.48 0 0 1 1.92 4.85 2.6 2.6 0 0 1 4.53 2h3.48a1.3 1.3 0 0 1 1.3 1.12c.08.56.18 1.11.31 1.65a1.3 1.3 0 0 1-.29 1.21l-1.48 1.48a15.6 15.6 0 0 0 7.29 7.29l1.48-1.48a1.3 1.3 0 0 1 1.21-.29c.54.13 1.09.23 1.65.31A1.3 1.3 0 0 1 22 16.92z"/>
+            </svg> +234 0916-547-4407
+        </a>
+       
+        
+    
+        <h3>Find Us Here</h3>
+        <iframe src="https://maps.google.com/maps?q=Your%20Address%20Here&t=&z=13&ie=UTF8&iwloc=&output=embed" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen></iframe>
+    </section>
+    <p id="thank-you-message" style="display:none;">Thank you for getting in touch! We will get back to you shortly.</p>
+    <label class="switch">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider round"></span>
+      </label>
+      
+</body>
+</html>

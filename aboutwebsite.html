@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="app1.css">
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission for now
+            document.getElementById('thank-you-message').style.display = 'block'; // Show thank you message
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="class234567890.html" target="_blank">Home</a></li> <!-- External link -->
+            <li><a href="aboutwebsite.html">About</a></li> <!-- Internal link to a new About page -->
+            <li><a href="serviceswebsite.html">Services</a></li>
+            <li><a href="Contactwebsite.html">Contact</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to [My Website]! We are dedicated to delivering top-quality services to our clients. With a passion for innovation, our team works around the clock to bring creative solutions to life.</p>
+    
+        <h3>Our Mission</h3>
+        <p>Our mission is to provide exceptional services that empower businesses and individuals to thrive in their respective industries.</p>
+    
+        <h3>Our Team</h3>
+        <div class="team">
+            <div class="team-member">
+                <h4>Jane Doe - CEO</h4>
+                <p>With over 15 years of experience in the industry, Jane leads our team with a clear vision for success.</p>
+            </div>
+            <div class="team-member">
+                <h4>John Smith - CTO</h4>
+                <p>John oversees all technical operations, ensuring that our solutions are cutting-edge and reliable.</p>
+            </div>
+        </div>
+    </section>
+    <p id="thank-you-message" style="display:none;">Thank you for getting in touch! We will get back to you shortly.</p>
+    
+</body>
+</html>

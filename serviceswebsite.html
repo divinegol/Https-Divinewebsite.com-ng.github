@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <link rel="stylesheet" href="app2.css">
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent actual form submission for now
+            document.getElementById('thank-you-message').style.display = 'block'; // Show thank you message
+        });
+    </script>
+    
+</head>
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="class234567890.html" target="_blank">Home</a></li> <!-- External link -->
+            <li><a href="aboutwebsite.html">About</a></li> <!-- Internal link to a new About page -->
+            <li><a href="serviceswebsite.html">Services</a></li>
+            <li><a href="Contactwebsite.html">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service-item">
+                <h3>Web Development</h3>
+                <p style="color: black;">We offer custom web development solutions tailored to your business needs. From e-commerce to blogs, we build responsive, scalable websites.</p>
+            </div>
+            <div class="service-item">
+                <h3>Graphic Design</h3>
+                <p style="color: black;">Our design team brings your brand to life with creative visuals, logos, and branding strategies that resonate with your target audience.</p>
+            </div>
+            <div class="service-item">
+                <h3>SEO and Marketing</h3>
+                <p style="color: black;">Increase your online visibility and drive traffic with our SEO and digital marketing services, designed to get results and boost engagement.</p>
+            </div>
+        </div>
+    </section>
+    <p id="thank-you-message" style="display:none;">Thank you for getting in touch! We will get back to you shortly.</p>
+    
+</body>
+</html>
